@@ -11,14 +11,19 @@ function updateEmployeeWithKeyAndValue(employee,  keys, value){
 
 
 function destructivelyUpdateEmployeeWithKeyAndValue(employ, key, value){
+     let employee2 = {...employ}
      employ[key] = value;
      return employee;
 }
 
 
 function deleteFromEmployeeByKey(employ, key){
-    employ[key] = undefined; 
-    return employee;
+    let newEmployee = {...employ}
+    delete newEmployee[key];
+    return newEmployee;
 }
 
-console.log(deleteFromEmployeeByKey(employee, "name"))
+function destructivelyDeleteFromEmployeeByKey(employ, key){
+    delete employ[key];
+    return employee;
+}
