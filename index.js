@@ -14,3 +14,11 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employ, key, value){
      employ[key] = value;
      return employee;
 }
+
+
+function deleteFromEmployeeByKey(employ, key){
+    employ[key] = undefined; 
+    return employee;
+}
+
+console.log(deleteFromEmployeeByKey(employee, "name"))
