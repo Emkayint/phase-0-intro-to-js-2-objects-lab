@@ -1,5 +1,5 @@
 // Write your solution in this file!
-const employee = {
+let employee = {
     name : "Sam",
 }
 
@@ -9,4 +9,8 @@ function updateEmployeeWithKeyAndValue(employee,  keys, value){
     return work
 }
 
-console.log(updateEmployeeWithKeyAndValue(employee, "John", "Doe"))
+
+function destructivelyUpdateEmployeeWithKeyAndValue(employ, key, value){
+     employ[key] = value;
+     return employee;
+}
